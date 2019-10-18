@@ -43,13 +43,13 @@ class Login extends React.Component{
         if(!this.state.loggedIn){
             return <div className="container">
             <form>
-            <div class="form-group">
-            Username: <input type="text" class="form-control" name="username" value={this.state.username} onChange={this.handleChange} />
+            <div className="form-group">
+            Username: <input type="text" className="form-control" name="username" value={this.state.username} onChange={this.handleChange} />
             </div>
             <div class="form-group">
-            Password: <input type="password" class="form-control" name="password" value={this.state.password} onChange={this.handleChange} />
+            Password: <input type="password" className="form-control" name="password" value={this.state.password} onChange={this.handleChange} />
             </div>
-            <button type="submit" class="btn btn-success" onClick={this.loginUser}>Login</button>
+            <button type="submit" className="btn btn-success" onClick={this.loginUser}>Login</button>
             <NavLink to="/signup"> Signup </NavLink>
         </form>
         <div className="google-btn-container">

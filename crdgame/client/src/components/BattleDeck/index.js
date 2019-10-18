@@ -79,8 +79,8 @@ class BattleDeck extends Component {
     return (
       <div>
         {this.renderRedirect()}
-        <div class="row">
-          <div class="col s12 m6 l2">
+        <div className="row">
+          <div className="col s12 m6 l2">
 
           </div>
         </div>
