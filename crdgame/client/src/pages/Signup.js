@@ -46,6 +46,8 @@ class Signup extends React.Component {
     render(){
         if(!this.state.signedUp) {
         return <div className="container">
+        {/* <Container fixed> */}
+
         <Nav />
         <form>
         Username: <input type="text" name="username" class="form-control" value={this.state.username} onChange={this.handleChange} /><br />
@@ -58,6 +60,8 @@ class Signup extends React.Component {
         <div class="alert alert-danger" role="alert" hidden={!this.state.badPassword}>
             Passwords don't match!
         </div>
+        {/* </Container> */}
+
     </div>
         }
     else{
