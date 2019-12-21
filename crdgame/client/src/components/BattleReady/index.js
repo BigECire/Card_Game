@@ -121,11 +121,12 @@ class BattleReady extends Component {
             <div className="row">
             {this.renderRedirect()}
                 <div className="col m12">
-                    <div className="card" >
+                    <div className="card" id="inputer">
                         <ul className="collection with-header">
                             <li className="collection-header"><h4><span className="badge">{this.state.numUsers}</span>Pick Your Opponent</h4></li>
                             {this.state.allUsers.map((line) => {
-                                return <li className="collection-item"><div>{line.name}<a href="#!" className="secondary-content"><i className="material-icons" data-user-id={line.id} onClick={this.toBattle}>send</i></a></div></li>
+                                return <li className="collection-item"><div>{line.name}<a href="#!" className="secondary-content"><i className="material-icons" data-user-id={line.id} onClick={this.toBattle}>send</i></a></div>
+                                </li>
                             })}
 
                         </ul>

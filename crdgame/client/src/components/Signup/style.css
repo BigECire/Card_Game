@@ -1,3 +1,7 @@
-.container {
-    background-color: aquamarine;
+#inputer {
+    margin-top: 5%;
+    background: rgb(242, 193, 252);
+
+    padding: 10%;
+    border-radius: 5%;
 }
